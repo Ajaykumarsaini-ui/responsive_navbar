@@ -9,7 +9,6 @@
 
 html {
   font-size: 62.5%;
-  /* 1rem = 10px */
   overflow-x: hidden;
 }
 
@@ -66,11 +65,11 @@ body {
 
 .mobile-nav-icon[name="close-outline"] {
   display: none;
-}
+} 
 
 /* Responsive Codes  */
 
-/* 980px  */
+ /* 980px  */
 @media screen and (max-width:992px) {
   .mobile-navbar-btn {
     display: block;
@@ -79,30 +78,30 @@ body {
   }
 
   .header {
-    /* position: relative; */
-    top: 0;
+    position:relative;
   }
 
   .header .logo {
     width: 40%;
+
   }
 
   .navbar {
-    /* display: none; */
+    display: none;
     width: 100%;
     height:100vh;
     background: #00070c;
-    position: absolute;
+    position:absolute;
     top:0;
-    /* padding-top: 50px; */
     left: 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    /* overflow:hidden !important; */
 
     /* to get the tranisition  */
-    transform: translateX(100%);
+     transform: translateX(100%);
     transition: all 0.5s linear;
 
     opacity: 0;
@@ -113,7 +112,6 @@ body {
   .navbar-list {
     flex-direction: column;
     align-items: center;
-    /* margin-top: 50px; */
   }
 
   .active .navbar {
@@ -121,7 +119,6 @@ body {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    /* height: 100vh; */
   }
 
   .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
@@ -131,10 +128,10 @@ body {
   .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
     display: none;
   }
-}
+} 
 
 /* Below 560px  */
-@media (max-width: 35em) {
+ @media (max-width: 35em) {
   .header {
     padding: 0 2.4rem;
   }
@@ -143,3 +140,41 @@ body {
     width: 60%;
   }
 }
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+  } 
+  
+  
+  /* ===========================================
+  Hero and Service Section Start
+  ======================================= */
+  .section-hero,
+  .section-services {
+    padding: 9.6rem 0;
+    background-color:white;
+    height: 60vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-services {
+    background: #f3f0ff;
+  }
+  
+  .section-hero p,
+  .section-services p {
+    font-size: 3.2rem;
+  }
+  
+  /* ===========================================
+  Responsive Codes 
+  ======================================= */
+  
+  
